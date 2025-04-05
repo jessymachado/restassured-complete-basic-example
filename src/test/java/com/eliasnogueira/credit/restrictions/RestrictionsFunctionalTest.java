@@ -41,7 +41,7 @@ class RestrictionsFunctionalTest extends BaseAPI {
 
     @Test
     @Tag(FUNCTIONAL)
-    @DisplayName("Should query a CPF without restriction")
+    @DisplayName("Deve consultar o CPF sem restrições")
     void cpfWithNoRestriction() {
         given().
             pathParam(RestrictionsData.CPF, RestrictionDataFactory.cpfWithoutRestriction()).
@@ -53,7 +53,7 @@ class RestrictionsFunctionalTest extends BaseAPI {
 
     @Test
     @Tag(FUNCTIONAL)
-    @DisplayName("Should query a CPF with restriction")
+    @DisplayName("Deve consultar um CPF com restrição")
     void cpfWithRestriction() {
         String cpfWithRestriction = RestrictionDataFactory.cpfWithRestriction();
 
